@@ -1,0 +1,29 @@
+.slider-controls {
+    display: grid;
+    gap: 15px;
+}
+.slider-controls__arrows {
+    display: flex;
+    column-gap: 5px;
+    // width: 44px;
+    // height: 44px;
+}
+.slider-controls__count {
+    // padding-left: 16px;
+    display: flex;
+    column-gap: 6px;
+    justify-content: flex-end;//выравнивание по нижней гарнице
+    align-items: flex-end;
+
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: right;
+    
+}
+.slider-controls__count-current, .swiper-pagination-current {
+    font-size: 32px;
+    line-height: 0.75;
+    color: #fff;
+}
