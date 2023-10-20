@@ -3,7 +3,6 @@
     position: relative;
     background-color: #c4c4c4;
     color: #fff;
-    
 }
 
 .header a {
@@ -74,11 +73,13 @@
     pointer-events: all;
 
     position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0%, -50%);
-
-    width: 10px;
-    height: 400px;
-    background-color: #878787;
+    right: 0px;
+    top: 45%;
+    width: 326px;
+    height: 10px;
+    //развернуть на 90 градусов
+    //и поместить на 50% по иксу
+    transform: rotate(90deg) translate(50%, 0%);
+    //повернуть относительно нижнего правого угла
+    transform-origin: right top;
 }
