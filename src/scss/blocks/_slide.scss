@@ -20,6 +20,11 @@
     // text-fill-color: transparent;
 }
 
+@mixin background-size {
+    background-position: center center; /*x y*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .slide {
     height: 100vh;
     overflow: hidden;
@@ -30,44 +35,31 @@
     justify-content: space-between;
 
     background-color: #555;
-    background-position: center center; /*x y*/
-    background-size: cover;
-    background-repeat: no-repeat;
 
     &--norway {
         background: var(--radial-bg), var(--linear-bg),
             url('./../img/header/bg-1.jpg');
-        background-position: center center; /*x y*/
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include background-size;
     }
     &--austria {
         background: var(--radial-bg), var(--linear-bg),
             url('./../img/header/bg-2.jpg');
-        background-position: center center; /*x y*/
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include background-size;
     }
     &--uae {
         background: var(--radial-bg), var(--linear-bg),
             url('./../img/header/bg-3.jpg');
-        background-position: center center; /*x y*/
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include background-size;
     }
     &--thailand {
         background: var(--radial-bg), var(--linear-bg),
             url('./../img/header/bg-4.jpg');
-        background-position: center center; /*x y*/
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include background-size;
     }
     &--morocco {
         background: var(--radial-bg), var(--linear-bg),
             url('./../img/header/bg-5.jpg');
-        background-position: center center; /*x y*/
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include background-size;
     }
 
     color: #fff;

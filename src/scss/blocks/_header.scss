@@ -59,6 +59,10 @@
     position: absolute;
     left: 0;
     bottom: 0;
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
 }
 
 .header__slider-controls {
@@ -67,6 +71,9 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    @media (max-width: 1023px) {
+        display: none;
+    }
 }
 
 .header__scrollbar {
@@ -82,4 +89,16 @@
     transform: rotate(90deg) translate(50%, 0%);
     //повернуть относительно нижнего правого угла
     transform-origin: right top;
+
+    @media (max-width: 767px) {
+        transform: none;
+        top: unset;
+        bottom: -15px;
+        left: 0;
+        right: unset;
+        width: 100%;
+    }
+    @media (max-height: 600px) {
+        width: 250px;
+    }
 }
