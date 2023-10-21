@@ -1,8 +1,10 @@
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
-
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+import loader from './modules/loader.js';
+import mobileNav from './modules/mobile-nav.js';
+
+loader();
+mobileNav();
 
 // Initialize Swiper:
 const swiper = new Swiper('.swiper', {
@@ -20,7 +22,7 @@ const swiper = new Swiper('.swiper', {
     // Показывает, какой слайд активен (точки или цифры)
     pagination: {
         el: '.slider-controls__count', //селектор из нашей разметки
-        type: 'fraction' //добавление нумерации слайдеров
+        type: 'fraction', //добавление нумерации слайдеров
     },
 
     // Управление стрелками

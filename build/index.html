@@ -8,7 +8,10 @@
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        
+        <div id="loader" class="loader-wrapper">
+    <span class="loader"></span>
+</div>
+
         <header class="header">
             <!-- Swiper -->
             <!-- Slider main container -->
@@ -129,7 +132,6 @@
     </div>
 </div>
 
-            <!-- Slider Content -->
 
             <!-- Header content -->
             <div class="header__content">
@@ -147,7 +149,7 @@
         </ul>
     </div>
     <div class="nav__mobile-nav">
-        <button id="modalOpen" class="nav-btn">
+        <button class="nav-btn" id="modalOpen">
             <img src="./../img/icons/nav-icon.svg" alt="Nav btn">
         </button>
     </div>
@@ -178,6 +180,20 @@
         <div class="swiper-scrollbar"></div>
     </div>
 </div>
+            <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+<div id="mobileNav" class="mobile-nav" >
+	<button class="mobile-nav__button" id="modalClose">
+		<img src="./img/icons/close-btn.svg" alt="Close">
+	</button>
+	<ul class="mobile-nav__list">
+		<li><a href="#" class="active">Destinations</a></li>
+		<li><a href="#!">Activities</a></li>
+		<li><a href="#!">About Us</a></li>
+		<li><a href="#!">Contact</a></li>
+	</ul>
+</div>
+
         </header>
 
         <script src="./js/index.bundle.js"></script>
