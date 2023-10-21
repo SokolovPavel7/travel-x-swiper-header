@@ -13,9 +13,9 @@
 }
 
 @mixin background-size {
-    background-position: center center; /*x y*/
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center center !important; /*x y*/
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 @mixin background($color) {
